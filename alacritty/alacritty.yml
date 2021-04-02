@@ -1,0 +1,83 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+import:
+  - /home/cerberus/.config/alacritty/gruvDark.yml
+
+window:
+  dimensions:
+    columns: 80
+    lines: 30
+
+  padding:
+    x: 15
+    y: 10
+
+scrolling:
+  history: 10000
+  multiplier: 1
+
+background_opacity: 0.9
+
+# Font configuration
+font:
+  normal:
+    #family: SF Mono
+    family: FiraCode Nerd Font
+    style: Regular
+
+  bold:
+    #family: SF Mono
+    family: FiraCode Nerd Font
+    style: Bold
+
+  italic:
+    #family: SF Mono
+    family: FiraCode Nerd Font
+    style: Italic
+
+  bold_italic:
+    #family: SF Mono
+    family: FiraCode Nerd Font
+    style: Bold Italic
+
+  size: 14
+
+draw_bold_text_with_bright_colors: true
+
+selection:
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+# Allow terminal applications to change Alacritty's window title.
+window.dynamic_title: true
+
+cursor:
+  style: Block
+
+live_config_reload: true
+
+# Shell
+#shell:
+#  program: /bin/zsh
+
+mouse:
+  hide_when_typing: true
+
+  url:
+    launcher:
+      program: xdg-open
+    modifiers: Shift
+
+# Mouse bindings
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+# Key bindings
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  # - { key: Add,      mods: Control,                 action: IncreaseFontSize }
+  # - { key: Subtract, mods: Control,                 action: DecreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }

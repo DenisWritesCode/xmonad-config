@@ -1,10 +1,9 @@
 /*
-/*/*
 !.gitignore
-!/alacritty/
-!coc/
+!/alacritty
 !fish/
 !nvim/
+/nvim/autoload/plugged/*
 !omf/
 !paru/
 !ranger/
