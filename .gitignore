@@ -1,0 +1,11 @@
+/*
+/*/*
+!.gitignore
+!alacritty/
+!coc/
+!fish/
+!nvim/
+!omf/
+!paru/
+!ranger/
+!xmonadScreens.sh
