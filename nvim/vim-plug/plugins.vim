@@ -15,6 +15,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    " Indent guidelines
+    Plug 'yggdroot/indentline'
 
     "Limelight + Goyo
     Plug 'junegunn/limelight.vim'

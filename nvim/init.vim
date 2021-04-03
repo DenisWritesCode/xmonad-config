@@ -18,5 +18,6 @@ source $HOME/.config/nvim/plug-config/sneak.vim  " Sneak - Jump around words
 source $HOME/.config/nvim/plug-config/quickscope.vim " Quickscope
 source $HOME/.config/nvim/plug-config/floaterm.vim  " Floatterm
 source $HOME/.config/nvim/plug-config/snippets.vim " Vim Snippets 
+source $HOME/.config/nvim/plug-config/indentLine.vim " Vim Indent 
 "luafile $HOME/.config/nvim/lua/colorizer.lua " Color highlight
 lua require 'plug-colorizer'
