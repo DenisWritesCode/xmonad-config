@@ -8,79 +8,83 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
-    Plug 'ryanoasis/vim-devicons'
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
-    " Indent guidelines
-    Plug 'yggdroot/indentline'
+" Better Syntax Support
+Plug 'sheerun/vim-polyglot'
+" File Explorer
+Plug 'scrooloose/NERDTree' 
+Plug 'ryanoasis/vim-devicons'
+" Auto pairs for '(' '[' '{'
+Plug 'jiangmiao/auto-pairs'
+" Indent guidelines
+Plug 'yggdroot/indentline'
 
-    "Limelight + Goyo
-    Plug 'junegunn/limelight.vim'
-    Plug 'junegunn/goyo.vim'
+"Limelight + Goyo
+Plug 'junegunn/limelight.vim' 
+Plug 'junegunn/goyo.vim'
 
-    " Stable version of coc
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Stable version of coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    " Autocomplete
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    " Typescript
-    Plug 'leafgarland/typescript-vim'
-    Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
-    Plug 'pangloss/vim-javascript'
+" Autocomplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Typescript
+Plug 'leafgarland/typescript-vim' 
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh' } 
+Plug 'pangloss/vim-javascript'
 
-    " Ranger plugins
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+" Ranger plugins
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
-    " Commenter
-    Plug 'tpope/vim-commentary'
+" Commenter
+Plug 'tpope/vim-commentary'
 
-    " fzf
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
+" Markdown 
+" preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
-    " Startify
-    Plug 'mhinz/vim-startify'
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } 
+Plug 'junegunn/fzf.vim' 
+Plug 'airblade/vim-rooter'
 
-    " Git intergration
-    Plug 'mhinz/vim-signify'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
+" Startify
+Plug 'mhinz/vim-startify'
 
-    " Sneak - Jump in text
-    Plug 'justinmk/vim-sneak'
+" Git intergration
+Plug 'mhinz/vim-signify' 
+Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-rhubarb' 
+Plug 'junegunn/gv.vim'
 
-    " Quick-Scope
-    Plug 'unblevable/quick-scope'
+" Sneak - Jump in text
+Plug 'justinmk/vim-sneak'
 
-    " Remember Keybindings
-    Plug 'liuchengxu/vim-which-key'
+" Quick-Scope
+Plug 'unblevable/quick-scope'
 
-    " Floaterm
-    Plug 'voldikss/vim-floaterm'
+" Remember Keybindings
+Plug 'liuchengxu/vim-which-key'
 
-    " Snippets
-    Plug 'honza/vim-snippets'
+" Floaterm
+Plug 'voldikss/vim-floaterm'
 
-    " Colorizer
-    Plug 'norcalli/nvim-colorizer.lua'
-    " Brackets colorizer
-    Plug 'junegunn/rainbow_parentheses.vim'
+" Snippets
+Plug 'honza/vim-snippets'
 
-    " Colorscheme
-    Plug 'morhetz/gruvbox'
-    Plug 'arcticicestudio/nord-vim'
-    Plug 'joshdick/onedark.vim'
-    Plug 'sonph/onehalf', { 'rtp': 'vim' } " one half
+" Colorizer
+Plug 'norcalli/nvim-colorizer.lua'
+" Brackets colorizer
+Plug 'junegunn/rainbow_parentheses.vim'
 
-    " Airline
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+" Colorscheme
+Plug 'morhetz/gruvbox' 
+Plug 'arcticicestudio/nord-vim' 
+Plug 'joshdick/onedark.vim' 
+Plug 'sonph/onehalf', { 'rtp': 'vim' } " one half
+
+" Airline
+Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline-themes'
 
 
 call plug#end()

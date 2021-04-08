@@ -21,3 +21,5 @@ source $HOME/.config/nvim/plug-config/snippets.vim " Vim Snippets
 source $HOME/.config/nvim/plug-config/indentLine.vim " Vim Indent 
 "luafile $HOME/.config/nvim/lua/colorizer.lua " Color highlight
 lua require 'plug-colorizer'
+
+set fo-=l;
