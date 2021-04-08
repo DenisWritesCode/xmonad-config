@@ -19,7 +19,7 @@ set wrap linebreak " Use gj and gk to move between screen lines
 set colorcolumn=80 "Draw column at 80 Characters
 set termguicolors  " For good terminal colors
 set textwidth=79   " Wrap code at 80 characters
-"set formatoptions+=t " Trynna wrap this mf lines
+set formatoptions-=l " Trynna wrap this mf lines
 
 " Used to show inivisible characters. Might be useful with Python 
 " set list " Show invisible characters
@@ -67,3 +67,11 @@ au! BufWritePost $MYVIMRC source %
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+" Move lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
