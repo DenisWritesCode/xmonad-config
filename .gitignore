@@ -1,5 +1,6 @@
 /*
 !.gitignore
+!.tmux.conf
 !.xinitrc
 !/alacritty
 !fish/
