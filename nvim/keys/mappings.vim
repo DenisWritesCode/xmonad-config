@@ -83,3 +83,39 @@ vnoremap <space>/ :Commentary<CR>
 
 " Format doc
 map <F7> gg=G<C-o><C-o>
+
+
+" Move lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" Change layout to Dvorak
+imap ht <Esc>
+
+" Remapping navigation to be friendlier with Dvorak
+nnoremap d h
+nnoremap h j
+nnoremap t k
+nnoremap n l
+nnoremap ee dd
+nnoremap y t
+nnoremap Y T
+nnoremap e d
+
+" Remapping b --> n in normal mode (for navigation in search)
+nnoremap b n
+nnoremap B N
+
+" Remapping window navigation
+nnoremap <S-Right> <C-W>l
+nnoremap <S-Left> <C-W>h
+nnoremap <S-Down> <C-W>j
+nnoremap <S-Up> <C-W>k
+
+" Easier command typing for Dvorak
+nnoremap ; :
+nnoremap : ;
