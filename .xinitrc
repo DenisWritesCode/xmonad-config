@@ -40,7 +40,7 @@ fi
 xmodmap -e "pointer = 3 2 1 4 5" &
 setxkbmap -option caps:escape &
 xsetroot -cursor_name left_ptr &
-feh --bg-fill --randomize ~/Pictures/walls/* ~/Pictures/walls/* &
+~/.config/wall.sh &
 ~/.config/xmonadScreens.sh &
 setxkbmap dvorak &
 exec xmonad
