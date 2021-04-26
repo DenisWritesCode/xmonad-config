@@ -2,6 +2,7 @@
 !.gitignore
 !.tmux.conf
 !.xinitrc
+!.xmonad/
 !/alacritty
 !fish/
 !nvim/
