@@ -37,10 +37,16 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # XMonad
-xmodmap -e "pointer = 3 2 1 4 5" &
-setxkbmap -option caps:escape &
-xsetroot -cursor_name left_ptr &
-~/.config/wall.sh &
-~/.config/xmonadScreens.sh &
-setxkbmap dvorak &
+xmodmap -e "pointer = 3 2 1 4 5"
+xsetroot -cursor_name left_ptr
+~/.config/xmonadScreens.sh
+setxkbmap dvorak
+picom -f &
 exec xmonad
+
+
+
+# Gnome
+#export XDG_SESSION_TYPE=x11
+#export GDK_BACKEND=x11
+#exec gnome-session
