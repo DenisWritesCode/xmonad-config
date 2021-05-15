@@ -1,8 +1,8 @@
 
-xmonad.hs:301:12: warning: [-Wdeprecations]
+xmonad.hs:303:12: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
     |
-301 | defaults = defaultConfig {
+303 | defaults = defaultConfig {
     |            ^^^^^^^^^^^^^
